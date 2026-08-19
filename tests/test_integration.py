@@ -1,4 +1,4 @@
-from wapsa.services.note_integration_service import NoteIngestionService
+from services.note_integration_service import NoteIngestionService
 
 def main():
     service = NoteIngestionService()

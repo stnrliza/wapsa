@@ -9,6 +9,7 @@ class Settings:
     gemini_api_key: str
     notion_api_key: str
     notion_notes_db_id: str
+    notion_expense_db_id: str
     gemini_model: str = "gemini-3.5-flash-lite"
 
     @classmethod
@@ -17,6 +18,7 @@ class Settings:
             "gemini_api_key": os.getenv("GEMINI_API_KEY"),
             "notion_api_key": os.getenv("NOTION_API_KEY"),
             "notion_notes_db_id": os.getenv("NOTION_NOTES_DB_ID"),
+            "notion_expense_db_id": os.getenv("NOTION_EXPENSE_DB_ID"),
         }
         missing = [k for k, v in required.items() if not v]
         if missing:
