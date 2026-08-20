@@ -1,8 +1,8 @@
 from datetime import date
-from clients.gemini_client import GeminiClient
-from clients.notion_client import NotionClient
-from models.expense import Expense, VALID_EXPENSE_CATEGORIES
-from config.settings import settings
+from wapsa.clients.gemini_client import GeminiClient
+from wapsa.clients.notion_client import NotionClient
+from wapsa.models.expense import Expense, VALID_EXPENSE_CATEGORIES
+from wapsa.config.settings import settings
 
 class ExpenseIngestionService:
     def __init__(self):

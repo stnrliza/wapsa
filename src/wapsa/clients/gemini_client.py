@@ -1,6 +1,6 @@
 import json
 import requests
-from config.settings import settings
+from wapsa.config.settings import settings
 
 class GeminiClient:
     BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models"

@@ -1,7 +1,7 @@
 import requests
-from config.settings import settings
-from models.note import Note
-from models.expense import Expense
+from wapsa.config.settings import settings
+from wapsa.models.note import Note
+from wapsa.models.expense import Expense
 
 class NotionClient:
     BASE_URL = "https://api.notion.com/v1"

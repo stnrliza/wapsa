@@ -1,8 +1,8 @@
 from datetime import date
-from clients.gemini_client import GeminiClient
-from clients.notion_client import NotionClient
-from models.note import Note, VALID_CATEGORIES
-from config.settings import settings
+from wapsa.clients.gemini_client import GeminiClient
+from wapsa.clients.notion_client import NotionClient
+from wapsa.models.note import Note, VALID_CATEGORIES
+from wapsa.config.settings import settings
 
 class NoteIngestionService:
     def __init__(self):

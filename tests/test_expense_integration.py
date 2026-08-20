@@ -1,4 +1,4 @@
-from services.expense_integration_service import ExpenseIngestionService
+from wapsa.services.expense_integration_service import ExpenseIngestionService
 
 def main():
     service = ExpenseIngestionService()
